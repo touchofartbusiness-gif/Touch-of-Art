@@ -6,7 +6,7 @@ Dies ist die offizielle Website für **Touch of Art | Hair & Beauty**.
 
 ## 📂 Struktur
 - `index.html` – Hauptseite
-- `style.css` – Design und Layout
+- `style.css` – <link rel="stylesheet" href="style.css">
 - `script.js` – Interaktive Funktionen
 - `README.md` – Projektbeschreibung
 
