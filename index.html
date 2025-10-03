@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Touch of Art | Hair & Beauty</title>
+  <meta name="description" content="Touch of Art - Professionelle Frisuren und Beauty Services. Jetzt Termin buchen!" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✂️</text></svg>">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <a class="brand" href="#home">
+        <svg class="logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="50" cy="50" r="50" fill="#111"/>
+          <text x="50%" y="55%" text-anchor="middle" font-size="42" fill="#fff" font-family="Arial">TA</text>
+        </svg>
+        <span class="brand-text">Touch of Art</span>
+      </a>
+      <nav class="main-nav">
+        <a href="#about">Über uns</a>
+        <a href="#services">Leistungen</a>
+        <a href="#prices">Preise</a>
+        <a href="#gallery">Galerie</a>
+        <a href="#contact">Kontakt</a>
+      </nav>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Menü">☰</button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Touch of Art</h1>
+          <p>Ihr exklusiver Friseur- und Beautysalon. Modern, stilvoll und professionell.</p>
+          <a class="btn" href="#contact">Jetzt Termin buchen</a>
+        </div>
+        <div class="hero-image" role="img" aria-label="Salon Touch of Art" style="background-image:url('https://via.placeholder.com/800x600')"></div>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2>Über uns</h2>
+      <p>Touch of Art steht für kreative Frisuren, exklusive Stylings und umfassende Beauty Services. Unser Team verbindet handwerkliche Präzision mit künstlerischem Anspruch – für Ihren einzigartigen Look.</p>
+    </section>
+
+    <section id="services" class="section dark">
+      <div class="container">
+        <h2>Leistungen</h2>
+        <div class="cards">
+          <div class="card"><h3>Haarschnitte</h3><p>Moderne und klassische Styles für Damen & Herren.</p></div>
+          <div class="card"><h3>Bartpflege</h3><p>Styling, Trimmen und Pflege mit hochwertigen Produkten.</p></div>
+          <div class="card"><h3>Styling & Coloration</h3><p>Professionelles Styling und individuelle Farbtechniken.</p></div>
+          <div class="card"><h3>Beauty & Pflege</h3><p>Behandlungen für Haut und Haar für ein frisches Aussehen.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="prices" class="section container">
+      <h2>Preise</h2>
+      <table class="prices">
+        <thead><tr><th>Leistung</th><th>Preis</th></tr></thead>
+        <tbody>
+          <tr><td>Herrenhaarschnitt</td><td>€25</td></tr>
+          <tr><td>Damenhaarschnitt</td><td>€40</td></tr>
+          <tr><td>Bartpflege</td><td>€15</td></tr>
+          <tr><td>Coloration</td><td>ab €45</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="gallery" class="section dark">
+      <div class="container">
+        <h2>Galerie</h2>
+        <div class="gallery-grid">
+          <img src="https://via.placeholder.com/400x300" alt="Beispiel Frisur">
+          <img src="https://via.placeholder.com/400x300" alt="Salon Bild">
+          <img src="https://via.placeholder.com/400x300" alt="Bartpflege">
+          <img src="https://via.placeholder.com/400x300" alt="Styling">
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2>Kontakt</h2>
+      <div class="contact-grid">
+        <div>
+          <p>📍 Adresse: Musterstraße 1, 12345 Berlin</p>
+          <p>📞 Telefon: +49 123 456 789</p>
+          <p>📧 E-Mail: <a href="mailto:business.touch.of.art@gmail.com">business.touch.of.art@gmail.com</a></p>
+          <p>Öffnungszeiten: Mo–Fr 09:00–19:00</p>
+        </div>
+        <form id="contactForm" class="contact-form" onsubmit="return submitForm(event)">
+          <label> Name <input type="text" id="name" required></label>
+          <label> Telefon/E-Mail <input type="text" id="phone" required></label>
+          <label> Leistung
+            <select id="service">
+              <option>Haarschnitt</option>
+              <option>Bartpflege</option>
+              <option>Coloration</option>
+              <option>Styling</option>
+            </select>
+          </label>
+          <label> Wunschtermin <input type="datetime-local" id="datetime"></label>
+          <button class="btn" type="submit">Anfrage senden</button>
+          <p class="form-note">Die Anfrage öffnet Ihr E-Mail Programm.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>© <span id="year"></span> Touch of Art. Alle Rechte vorbehalten.</p>
+      <div class="socials"><a href="#">Instagram</a> | <a href="#">Facebook</a></div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
